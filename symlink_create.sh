@@ -27,13 +27,13 @@
 # Set up the directory (without the last slash) in which the script (and the log) is (please check the permissions).
 scriptdir="/home/user/utilities"
 
-# Set up the (primary) symbolic link directory to be created (without the last slash).
+# Set up the (primary) source directory for the symbolic link (without the last slash).
 primarydir="/media/theprimarydrive"
 
-# Set up the (secondary) symbolic link directory to be created if the primary directory fails in read-write test (without the last slash).
+# Set up the (secondary) source directory for the symbolic link if the primary directory fails in read-write test (without the last slash).
 secondarydir="/home/user/thebackupfolder"
 
-# Set up the (secondary) symbolic link directory to be created if the primary directory fails in read-write test (without the last slash).
+# Set up the symbolic link location and name (without the last slash).
 symlinklocation="/media/symlink_folder"
 
 
