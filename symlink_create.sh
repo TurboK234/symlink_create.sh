@@ -102,7 +102,7 @@ then
         # This is still the expected case.
         echo "Double-check passed, continuing."
     else
-		    errorlvl=1
+        errorlvl=1
         curdatetime=$(date +"%d/%m/%Y %R")
         echo "$curdatetime : The probe file could not be created in the $primarydir folder, primary will most likely fail." >> "$scriptdir/log_symlink_create.txt"
         echo "The primary folder write-read permissions test failed, check the log."
@@ -121,9 +121,9 @@ then
         echo "$curdatetime : The write-read test for $primarydir failed. Check that the folder is valid and all users have write permissions." >> "$scriptdir/log_symlink_create.txt"
     else
         sourcesuccess=1
-		    curdatetime=$(date +"%d/%m/%Y %R")
+        curdatetime=$(date +"%d/%m/%Y %R")
         echo "$curdatetime : The write-read test for $primarydir succeeded." >> "$scriptdir/log_symlink_create.txt"
-	      echo "Next, create the symbolic link."
+        echo "Next, create the symbolic link."
     fi
 fi
 
@@ -190,8 +190,8 @@ then
             echo "Next, log the error and exit, no symbolic links will be created or updated."
         else
             sourcesuccess=2
-			      curdatetime=$(date +"%d/%m/%Y %R")
-	          echo "$curdatetime : The write-read test for $secondarydir succeeded." >> "$scriptdir/log_symlink_create.txt"
+	    curdatetime=$(date +"%d/%m/%Y %R")
+            echo "$curdatetime : The write-read test for $secondarydir succeeded." >> "$scriptdir/log_symlink_create.txt"
             echo "Next, create the symbolic link."
         fi
     fi
@@ -206,7 +206,7 @@ then
     curdatetime=$(date +"%d/%m/%Y %R")
     echo "$curdatetime : Both primary and secondary directories failed their read-write tests, exiting." >> "$scriptdir/log_symlink_create.txt"
     echo "Both primary and secondary directories failed their read-write tests, exiting."
-  	exit 0
+    exit 0
 fi
 
 if [ "$sourcesuccess" = 1 ]
