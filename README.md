@@ -5,7 +5,7 @@ This script is supposed to be run at boot (by cron) or as a scheduled maintenanc
 
 The script checks if a "primary" folder (to be linked) is available and then creates the symbolic link (with the desired location and name) pointing to it. It then tests the symbolic link's read-write availability.
 
-If the primary folder is not available (e.g. a hard disk was not mounted properly at boot the script creates the symbolick link using a "secondary" folder.
+If the primary folder is not available (e.g. a hard disk was not mounted properly at boot) the script creates the symbolick link using a "secondary" folder.
 
 The original usage is to create a certain path for TV recordings on a system that has an external drive that might not be available (if the drive is disconnected or the mounting fails when booting). In this case the same symbolic link is created for a folder that is known (!) to be available, for example a freely shared folder inside the user home directory. 
 
