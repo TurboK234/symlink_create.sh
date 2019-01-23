@@ -8,7 +8,7 @@
 # pointing to it. It then tests the symbolic link's read-write availability.
 # .
 # If the primary folder is not available (e.g. a hard disk was not
-# mounted properly at boot the script creates the symbolick link
+# mounted properly at boot) the script creates the symbolick link
 # using a "secondary" folder.
 # .
 # The original usage is to create a certain path for TV recordings
